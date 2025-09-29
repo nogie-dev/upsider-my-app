@@ -10,7 +10,7 @@ app.use((req, res, next) => {
 app.get("/", (req, res) => {
   const os = require("os");
   const serverHost = os.hostname();
-
+  const t="t"
   res.json({
     serverHost,
     time: new Date().toISOString()
